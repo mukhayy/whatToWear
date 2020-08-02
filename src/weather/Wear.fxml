@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="Infinity" maxWidth="Infinity" onMouseClicked="#OnClick" prefHeight="561.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weather.WeatherData">
+   <children>
+      <ImageView fitHeight="572.0" fitWidth="891.0" layoutX="-9.0" layoutY="-6.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pictures/backgrounds/blue-blur-29047-1920x1080.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gif" fitHeight="210.0" fitWidth="228.0" layoutX="90.0" layoutY="14.0" pickOnBounds="true" visible="true">
+         <image>
+            <Image url="@../pictures/weatherIcon/ajax-loader.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="WCOND" layoutX="348.0" layoutY="137.0" prefHeight="114.0" prefWidth="213.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="WICON" layoutX="59.0" layoutY="35.0" prefHeight="234.0" prefWidth="315.0" />
+      <Label fx:id="Advice" layoutX="221.0" layoutY="212.0" prefHeight="301.0" prefWidth="549.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="Temperature" layoutX="348.0" layoutY="35.0" prefHeight="114.0" prefWidth="166.0" textFill="WHITE">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label fx:id="Umbrella" layoutX="77.0" layoutY="290.0" prefHeight="210.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>
